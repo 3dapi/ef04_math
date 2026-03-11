@@ -1,4 +1,4 @@
-INT SimpleCollisionRayTriangle(	const D3DXVECTOR3* pLinePos
+﻿INT SimpleCollisionRayTriangle(	const D3DXVECTOR3* pLinePos
 								,	const D3DXVECTOR3* pLineDir
 								,	const D3DXVECTOR3* pV0
 								,	const D3DXVECTOR3* pV1

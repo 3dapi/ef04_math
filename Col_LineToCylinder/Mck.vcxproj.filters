@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ed493076-4024-48b8-9cf9-857fb6374596}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{b7284606-5776-4db2-a040-b61cb3f2150e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{f14cc5c7-dd29-4857-99e7-2e9253f8818a}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="_D3D">
+      <UniqueIdentifier>{06283e43-9fdf-49eb-8c85-a19190390dcb}</UniqueIdentifier>
+      <Extensions>cpp;h;</Extensions>
+    </Filter>
+    <Filter Include="McUtil">
+      <UniqueIdentifier>{700a0c34-a1cc-4183-9a86-f8222021cd85}</UniqueIdentifier>
+      <Extensions>cpp;h;</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="McCollision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_d3d\d3dapp.cpp">
+      <Filter>_D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="_d3d\d3denum.cpp">
+      <Filter>_D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="_d3d\d3dutil.cpp">
+      <Filter>_D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="_d3d\dxutil.cpp">
+      <Filter>_D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="_McUtil\McCam.cpp">
+      <Filter>McUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="_McUtil\McGrid.cpp">
+      <Filter>McUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="_McUtil\McInput.cpp">
+      <Filter>McUtil</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Mck.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="McCollision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_d3d\d3dapp.h">
+      <Filter>_D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="_d3d\d3denum.h">
+      <Filter>_D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="_d3d\d3dsettings.h">
+      <Filter>_D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="_d3d\d3dutil.h">
+      <Filter>_D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="_d3d\dxutil.h">
+      <Filter>_D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="_McUtil\McCam.h">
+      <Filter>McUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="_McUtil\McGrid.h">
+      <Filter>McUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="_McUtil\McInput.h">
+      <Filter>McUtil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="DirectX.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
