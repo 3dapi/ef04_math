@@ -98,7 +98,7 @@ void main()
 	// 문제를 임의의 값, 임의의 축, 임의의 값에 대한 회전을 구해보자.
 	////////////////////////////////////////////////////////////////////////////
 
-	srand( (unsigned)time(NULL));
+	srand( (unsigned)time(nullptr));
 	
 	D3DXVECTOR3 vOut;
 	D3DXVECTOR3 vIn  ( FLOAT(rand()%RAND_MAX), FLOAT(rand()%RAND_MAX), FLOAT(rand()%RAND_MAX) );
@@ -128,10 +128,10 @@ void main()
 
 
 	// 2.2 DirectX 함수를 이용한 방법
-	// DirectX의 함수는 전부 오른손 좌표 기준으로 하므로 각도는 반전해야 한다.
+	// DirectX의 함수는 전부 오른손 좌표 기준으로 하므로 각도는 반전해야 한다.(결과가 다름. 변경되었나?
 	// 회전행렬을 만든다. --> 이행렬에 변환을 한다.
 	D3DXMATRIX mtR;
-	D3DXMatrixRotationAxis(&mtR, &vAxis, -fRadian);
+	D3DXMatrixRotationAxis(&mtR, &vAxis, fRadian);
 	D3DXVec3TransformCoord(&vOut, &vIn, &mtR);
 	printf("%f %f %f\n", vOut.x, vOut.y, vOut.z);
 }

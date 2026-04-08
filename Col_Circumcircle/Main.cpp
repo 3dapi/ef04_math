@@ -81,6 +81,7 @@ HRESULT CMain::Invalidate()
 HRESULT CMain::FrameMove()
 {
 	SAFE_FRMOV(	m_pInput	);
+	float camSpeed = m_fElapsedTime* 500.0F;
 
 	// Wheel mouse...
 	D3DXVECTOR3 vcD = m_pInput->GetMouseEps();
@@ -89,16 +90,16 @@ HRESULT CMain::FrameMove()
 		m_pCam->MoveForward(-vcD.z* .1f, 1.f);
 
 	if(m_pInput->KeyState('W'))					// W
-		m_pCam->MoveForward( 0.3F, 1.f);
+		m_pCam->MoveForward( camSpeed, 1.f);
 
 	if(m_pInput->KeyState('S'))					// S
-		m_pCam->MoveForward(-0.3F, 1.f);
+		m_pCam->MoveForward(-camSpeed, 1.f);
 
 	if(m_pInput->KeyState('A'))					// A
-		m_pCam->MoveSide(-0.3F);
+		m_pCam->MoveSide(-camSpeed);
 
 	if(m_pInput->KeyState('D'))					// D
-		m_pCam->MoveSide(0.3F);
+		m_pCam->MoveSide(camSpeed);
 	
 
 	if(m_pInput->BtnPress(1))
